@@ -1,0 +1,564 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* custom scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::selection {
+  background: rgb(0, 123, 255, 0.3);
+}
+.content {
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 30px;
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  padding: 25px 0;
+  transition: all 0.3s ease;
+}
+.navbar.sticky {
+  background: #1b1b1b;
+  padding: 10px 0;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.navbar .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.navbar .menu-list {
+  display: inline-flex;
+}
+.menu-list li {
+  list-style: none;
+}
+.menu-list li a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 10px;
+  border-radius: 30px;
+}
+.menu-list li a:hover {
+  background-color: #1b1b1b;
+}
+/*Home page*/
+#home a{
+  color: blue;
+}
+.home-page {
+  background-image: url("images/new\ bg2.gif");
+  background-size: cover; /* Ensures it covers the full width and height */
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+
+#typewriter {
+  border-right: 2px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 2s steps(15) forwards,
+    blink 0.5s step-end infinite alternate;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.check-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: yellow;
+  background: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+  font-size: 10px;
+}
+
+.check-link:hover {
+  color: #0056b3;
+}
+
+
+.icon {
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+.menu-list .cancel-btn {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+
+.title {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-family: 'Playwright GB S', cursive;
+
+  font-weight: 400; /* Set a valid font-weight value (e.g., 400 for normal, 700 for bold) */
+  font-style: normal; /* Optional: You can keep it or remove it if you don’t need it */
+}
+
+
+/*about*/
+
+.about-content {
+  display: flex;
+  align-items: center; /* vertically aligns the image and text */
+  justify-content: flex-start; /* keeps the image and text aligned to the left */
+  padding: 20px; /* Add some padding for better spacing */
+}
+
+.about-image {
+  margin-right: 20px; /* Adds space between the image and the text */
+}
+
+.about-image img {
+  max-width: 100%; /* Ensures the image stays responsive */
+  height: auto; /* Keeps the aspect ratio */
+}
+
+.about-writeup {
+  flex: 1; /* Ensures the text takes up the remaining space */
+  font-size: 26px;
+  color: #1c1b1b;
+}
+
+/*services*/
+.services {
+  padding: 4rem 2rem;
+  background-color: #111;
+  color: #fff;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background-color: #1c1c1c;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  background-color: #222;
+}
+
+.service-card i {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #f39c12;
+}
+
+.service-card h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.service-card p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #ccc;
+}
+
+.book-now {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #f39c12;
+  color: #f39c12;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.book-now:hover {
+  background-color: #f39c12;
+  color: #111;
+}
+/*live events */
+.live-events {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  color: #111;
+}
+
+.live-events-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.live-events-banner img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.live-events-content {
+  flex: 1;
+  min-width: 280px;
+}
+
+.live-events-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.live-events-content p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.live-events-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #111;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.sign-up {
+  background-color: #111;
+  color: #fff;
+}
+
+.get-tickets {
+  color: #111;
+}
+
+.sign-up:hover {
+  background-color: transparent;
+  color: #111;
+}
+
+.get-tickets:hover {
+  background-color: #111;
+  color: #fff;
+}
+
+
+
+/* Contact Section Styles */
+#contact {
+  padding: 50px 20px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #f39c12;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 450px;
+  margin-bottom: 40px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+}
+
+.contact-form input {
+  background-color: #fff;
+  color: #000;
+}
+
+.contact-form textarea {
+  background-color: #fff;
+  color: #000;
+  height: 150px;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  background-color: #fff; /* Black background */
+  color: #000; /* White text */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Add padding */
+  font-size: 16px; /* Set font size */
+  display: inline-flex; /* Align icon and text inline */
+  align-items: center; /* Vertically align the icon and text */
+  gap: 8px; /* Add space between the icon and the text */
+  cursor: pointer; /* Change the cursor to a pointer on hover */
+  border-radius: 5px; /* Slightly rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon {
+  background-color: #fff;
+  color: #000;
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.social-icon:hover {
+  background-color: #f39c12;
+  color: #fff;
+}
+
+.social-icon i {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1230px) {
+  .content {
+    padding: 0 60px;
+  }
+}
+@media (max-width: 1100px) {
+  .content {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 900px) {
+  .content {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 868px) {
+  body.disabled {
+    overflow: hidden;
+  }
+  .icon {
+    display: block;
+  }
+  .icon.hide {
+    display: none;
+  }
+  .navbar .menu-list {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+    left: -100%;
+    top: 0px;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    background: #222;
+    transition: all 0.3s ease;
+  }
+  .navbar.show .menu-list {
+    left: 0%;
+  }
+  .navbar .menu-list li {
+    margin-top: 45px;
+  }
+  .navbar .menu-list li a {
+    font-size: 23px;
+    margin-left: -100%;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .navbar.show .menu-list li a {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 380px) {
+  .navbar .logo a {
+    font-size: 27px;
+  }
+}
+
+/* Mobile view improvements */
+@media (max-width: 768px) {
+  /* Navbar adjustments */
+  .navbar .menu-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 999;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-100%);
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+  .navbar.show .menu-list {
+    transform: translateX(0);
+  }
+
+  .menu-list li {
+    margin: 20px 0;
+  }
+
+  .menu-list li a {
+    font-size: 24px;
+  }
+
+
+/*about*/
+  .about-content {
+    flex-direction: column; /* Stack the image and text vertically */
+    text-align: center; /* Center the text */
+}
+
+.about-image {
+    margin: 0 0 20px 0; /* Adds space below the image */
+}
+
+
+  /* Contact section adjustments */
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+ 
+  #typewriter{
+    
+    font-size: 27px;
+  }
+
+
+  /* General typography adjustments */
+  h2 {
+    font-size: 2rem;
+  }
+
+  p,
+  h3 {
+    font-size: 1rem;
+  }
+}
+
+/* For extra small devices */
+@media (max-width: 480px) {
+  /* Navbar */
+  .navbar .logo a {
+    font-size: 24px;
+  }
+
+  .star-container h4 {
+    font-size: 18px;
+  }
+
+  /* Contact form adjustments */
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+  }
+
+  .contact-form button {
+    padding: 10px 15px;
+  }
+
+  /* Further typography adjustments */
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  p,
+  h3 {
+    font-size: 0.875rem;
+  }
+}
+
+
+
